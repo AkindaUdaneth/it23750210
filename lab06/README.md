@@ -24,3 +24,11 @@ Here is a breakdown of the source files included in this submission:
 gcc -fopenmp filename.c -o output
 export OMP_NUM_THREADS=4
 ./output
+```
+
+**MPI (C & C++):**
+```bash
+mpicc filename.c -o output
+mpic++ filename.cc -o output
+mpirun -np <number_of_processors> -hostfile /shared/machinefile ./output
+```
